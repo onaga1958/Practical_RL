@@ -8,7 +8,7 @@ from torch.autograd import Variable
 # it doesn't use torch.nn.utils.rnn.pack_paded_sequence because reasons.
 
 
-class DoubleGRUTranslationModel(nn.Module):
+class DoubleTranslationModel(nn.Module):
     def __init__(self, inp_voc, out_voc,
                  emb_size, hid_size,):
         super(self.__class__, self).__init__()
